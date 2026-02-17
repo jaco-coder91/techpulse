@@ -1,0 +1,42 @@
+---
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="tag">Latest in tech · updated on build</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0.75em 1em;
+		background: white;
+		border-bottom: 1px solid rgba(var(--black), 0.06);
+		position: sticky;
+		top: 0;
+		backdrop-filter: blur(8px);
+		z-index: 10;
+	}
+	h2 {
+		margin: 0;
+		font-size: 1.05em;
+		letter-spacing: 0.02em;
+	}
+	h2 a {
+		text-decoration: none;
+		color: rgb(var(--black));
+	}
+	.tag {
+		color: rgb(var(--gray));
+		font-size: 0.95rem;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+</style>

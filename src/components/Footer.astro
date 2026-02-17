@@ -1,0 +1,21 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<p>&copy; {today.getFullYear()} TechPulse · Curated tech headlines.</p>
+	<p class="note">Sources: The Verge, TechCrunch, Ars Technica, Wired, Hacker News.</p>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 3em 1em;
+		background: white;
+		color: rgb(var(--gray));
+		text-align: center;
+		border-top: 1px solid rgba(var(--black), 0.06);
+	}
+	.note {
+		margin-top: 0.35rem;
+		font-size: 0.95rem;
+	}
+</style>
